@@ -1,0 +1,188 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: roboto;
+    font-size: 16px;
+}
+header{
+    padding: 0px 30px 0px 30px;
+    height: 60px;
+    background-color: black;
+    color: white;
+    width: 98%;
+    position: fixed;
+}
+.header-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    margin:0px 88px 0px 81px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+.amazon-logo{
+    width: 100px;
+    height: 31px;
+    border: 1px solid black;
+    padding: 14px 10px 10px 10px;
+    margin-top: 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.amazon-logo:hover{
+    border-color: #F0F0F0;
+}
+.middle-section{
+    width:330px;
+    justify-content: flex-start;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 140px 0px 150px 120px;
+}
+.review-order{
+    display: block;
+    font-size: 22px;
+    height: 27px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    height:570px;
+}
+.main-div-tot-left-section{
+   display: flex;
+   flex-wrap: wrap;
+   width: 730px;
+}
+.main-div-tot-right-section{
+    width: 312px;
+    height:315px;
+    border:1px solid rgb(231,231,231);
+    padding: 18px 18px 5px 18px;
+    border-radius: 4px;
+}
+.main-div-left-section-divs{
+   display: flex;
+   flex-direction: column;
+   height: 235px;
+   width: 700px;
+   padding: 18px;
+   border:1px solid rgb(231,231,231);
+   border-radius: 4px;
+}
+.cart-items-delivery-date{
+    font-size: 19px;
+    font-weight: 700;
+    color:rgb(0, 118, 0);
+    margin: 5px 0px 22px 0px;
+}
+.cart-items-details-div{
+    display: flex;
+    justify-content: space-between;
+}
+.images{
+    width: 104px;
+}
+.product-details,.delivery-options{
+    display: flex;
+    flex-direction: column;
+    width: 275px;
+}
+.product-name{
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.product-color,.product-size{
+    margin-bottom: 4px;
+}
+.product-price{
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: rgb(177, 39, 4);
+}
+.modify{
+    color: #017cb6;
+    margin-left: 4px;
+}
+.delivery-options-div{
+    display: flex;
+    margin-bottom: 11px;
+}
+.radio-button{
+    width: 1.2rem;
+    margin-right: 5px;
+}
+.delivery-date{
+    color: rgb(0, 118, 0);
+    font-weight: 500;
+}
+.order-summary{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.order-summary-divs{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin-bottom: 9px;
+}
+.shipping{
+    color: rgb(120, 120, 120);
+    margin-top: 3px;
+    font-size: 15px;
+}
+#order-total{
+    padding-top: 18px;
+    border-top: 1px solid rgb(222, 222, 222);
+    font-size: 18px;
+    font-weight: 700;
+}
+.paypal-option{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+.checkbox{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 3px 3px 3px 7px;
+}
+.place-order-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 81px;
+}
+.place-order-button{
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    color: rgb(33, 33, 33);
+    background-color: rgb(255, 216, 20);
+    border: 1px solid rgb(252, 210, 0);
+    box-shadow: 0 2px 5px rgba(213, 217, 217, 0.5);
+    cursor: pointer;
+}
+.place-order-button:hover{
+    opacity: 80%;
+}
+.place-order-button:active{
+    opacity: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0,0.12);
+}
