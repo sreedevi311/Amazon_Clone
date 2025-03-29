@@ -67,6 +67,10 @@ main{
    flex-wrap: wrap;
    width: 730px;
 }
+.cart-empty-msg{
+    font-size: 18px;
+    font-weight: 400;
+}
 .main-div-tot-right-section{
     width: 312px;
     height:315px;
@@ -82,6 +86,7 @@ main{
    padding: 18px;
    border:1px solid rgb(231,231,231);
    border-radius: 4px;
+   margin-bottom: 10px;
 }
 .cart-items-delivery-date{
     font-size: 19px;
@@ -113,9 +118,24 @@ main{
     font-weight: 600;
     color: rgb(177, 39, 4);
 }
-.modify{
+.input-div{
+    display: inline;
+}
+.new-quantity{
+    width: 50px;
+    font-size: 16px;
+}
+.update,.delete{
     color: #017cb6;
     margin-left: 4px;
+    cursor: pointer;
+    width:60px;
+}
+.update:hover{
+    color:rgb(18, 151, 18);
+}
+.delete:hover{
+    color: rgb(177, 39, 4);
 }
 .delivery-options-div{
     display: flex;
@@ -124,6 +144,7 @@ main{
 .radio-button{
     width: 1.2rem;
     margin-right: 5px;
+    accent-color: rgba(31, 31, 134, 0.589);
 }
 .delivery-date{
     color: rgb(0, 118, 0);
