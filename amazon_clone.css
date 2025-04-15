@@ -50,6 +50,10 @@ body{
 .search-box:hover{
     border: 0px none;
 }
+.search-box:focus {
+    outline: none;
+    border: 2px solid #ffa703; /* Custom border color */
+}
 .search-icon{
     display:flex;
     justify-content: center;
