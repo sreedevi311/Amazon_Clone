@@ -36,7 +36,7 @@ function updateCheckoutPage(){
                 js-main-div-left-section-divs-${matchingItem.id}">
         <div class="cart-items-delivery-date">Delivery date: <span style="font-size: 19px;">${dateString}</span></div>
         <div class="cart-items-details-div">
-            <div><img class="images" src='${matchingItem.image}'></div>
+            <div class="image-div"><img class="images" src='${matchingItem.image}'></div>
             <div class="product-details">
                 <div class="product-name">${matchingItem.name}</div>
                 <div class="product-price">$${(matchingItem.priceCents/100).toFixed(2)}</div>
