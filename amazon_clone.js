@@ -14,7 +14,7 @@ import {products} from "./data.js";
                  <img src=${product.rating.stars} class="rating">
                  <div class="rated-people">${product.rating.people}</div>
              </div>
-             <div class="price">${(product.priceCents/100).toFixed(2)}</div>
+             <div class="price">$${(product.priceCents/100).toFixed(2)}</div>
              <select class="drop-box" id="db-${product.id}">
                  <option value="1">1</option>
                  <option value="2">2</option>
@@ -54,11 +54,21 @@ updateCartQuantity();
 
 //search the products, searched in search bar in home page
 
+//by clicking 'search-icon'
+
 document.querySelector('.js-search-icon').addEventListener('click', (button) => {
     let keyword=document.querySelector('.js-search-box').value.trim();
     searchProducts(keyword); 
 });
 
+//by clicking 'enter' button
+
+document.querySelector('.js-search-box').addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        let keyword = event.target.value.trim();
+        searchProducts(keyword);
+    }
+});
 
 function searchProducts(keyword) {
     const query = keyword.toLowerCase();
@@ -66,7 +76,7 @@ function searchProducts(keyword) {
         return (product.name.toLowerCase().includes(query));
     });
     displayProducts(filterData);
-    addToCartButtons();
+    addToCartButtonsClicks();
 }
 
 const displayProducts=(Products)=>{
@@ -80,7 +90,7 @@ const displayProducts=(Products)=>{
                        <img src=${product.rating.stars} class="rating">
                        <div class="rated-people">${product.rating.people}</div>
                    </div>
-                   <div class="price">${(product.priceCents/100).toFixed(2)}</div>
+                   <div class="price">$${(product.priceCents/100).toFixed(2)}</div>
                    <select class="drop-box" id="db-${product.id}">
                        <option value="1">1</option>
                        <option value="2">2</option>
